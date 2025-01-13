@@ -1,0 +1,225 @@
+.character-modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.character-modal__container {
+  background: #2d2f42;
+  padding: 24px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  color: white;
+  border: 1px solid #4a4f68;
+}
+
+.character-modal__close-btn {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.character-modal__close-btn:hover {
+  background-color: #3a3f58;
+}
+
+.character-modal__header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #4a4f68;
+}
+
+.character-modal__header h2 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+.character-modal__body {
+  padding: 0 12px;
+}
+
+.character-modal__image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 auto 24px;
+  display: block;
+  background-color: #3a3f58;
+}
+
+.character-modal__name {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.character-modal__description {
+  margin-bottom: 24px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.character-modal__details {
+  background-color: #3a3f58;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.character-modal__detail-item {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.character-modal__detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.character-modal__footer {
+  padding-top: 20px;
+  border-top: 1px solid #4a4f68;
+}
+
+.character-modal__chat-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #7a75f0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.character-modal__chat-btn:hover {
+  background-color: #5f58d8;
+}
+
+.character-modal__chat-btn:active {
+  transform: scale(0.98);
+}
+
+.character-modal__image-container {
+  position: relative;
+}
+
+.follow-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.follow-button:hover {
+  background-color: #333;
+}
+
+.follow-button.following {
+  background-color: #4caf50;
+}
+
+.follow-button.loading {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.character-modal__user-input {
+  margin-bottom: 24px;
+}
+
+.character-modal__user-input label {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8); /* 라벨 텍스트 색상 */
+  margin-bottom: 8px;
+}
+
+.character-modal__user-input input,
+.character-modal__user-input textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white; /* 입력 텍스트 색상 */
+  background-color: #3a3f58; /* 다크 배경 */
+  border: 1px solid #4a4f68; /* 테두리 */
+  border-radius: 4px;
+  outline: none;
+  resize: none; /* textarea 크기 고정 */
+}
+
+.character-modal__user-input input:focus,
+.character-modal__user-input textarea:focus {
+  border-color: #7a75f0; /* 포커스 상태에서 강조 색상 */
+  background-color: #4a4f68; /* 포커스 시 살짝 밝은 배경 */
+}
+
+.character-modal__user-input input::placeholder,
+.character-modal__user-input textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* 플레이스홀더 텍스트 색상 */
+}
+
+.character-modal__user-input textarea {
+  height: 100px; /* 텍스트 영역의 높이 */
+  line-height: 1.5;
+}
+
+.name-follower-container {
+  position: relative;
+  text-align: center;
+  margin-bottom: 16px; /* 이름과 설명 사이 여백 */
+  height: 40px; /* 이름과 팔로워 수를 위한 고정 높이 */
+}
+
+.character-modal__name {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* 수직 중앙 정렬 */
+}
+
+.follower-count {
+  position: absolute;
+  right: 0;
+  top: 50%; /* 수직 중앙 정렬 */
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,67 @@
+/* ===================사용 방법==================== */
+/* font-size: var(--font-size-h1);
+   font-weight: var(--font-weight-bold); */
+
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+
+
+:root {
+  /* ==========폰트============================ */
+  /* 폰트 스타일 */
+  --font-english: 'Abril Fatface', serif;
+  --font-korean: 'Noto Sans KR', sans-serif;
+  
+
+  /* Font sizes */
+  --font-size-h1: 60px;
+  --font-size-h2: 40px;
+  --font-size-h3: 30px;
+  --font-size-body-intro: 24px;
+  --font-size-body-main: 20px;
+  --font-size-large: 17px;
+  --font-size-medium: 15px;
+  --font-size-small: 13px;
+  --font-size-smallest: 9.5px;
+  
+    /* Font weights */
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+  
+
+
+  /* ===========색상========================= */
+  /* 텍스트 색상 */
+  --blue-dark: #1D1C34;
+  --dark1: #1D1C34;
+  --white: #FFFFFF;/* white */
+  --white-60: rgba(255, 255, 255, 0.6);/* white 60% */
+  --white-30: rgba(255, 255, 255, 0.3);/* white 30% */
+  --white-20: rgba(255, 255, 255, 0.2);/* white 20% */
+
+ 
+
+  /* 버튼 색상 */
+  --purple-1: #48319D;
+  --purple-light-2: #8322FF;
+  --blue: #22D7FF;
+  --gradient: linear-gradient(90deg, #A73EE7, #00EBFF);
+  --gradient-hover: linear-gradient(90deg, #00EBFF,#A73EE7 );
+  --blue-40: rgba(34, 215, 255, 0.4);
+
+
+  /* 하이라이트 색상 */
+  --red: #ED695E;
+  /* red */
+  --yellow: #F4BF4F;
+  /* yellow */
+  --green: #61C554;
+  /* green */
+
+  /* 배경 색성 */
+  --side:#454B79;
+  --bg:#2E335A;
+}
+ 

@@ -1,0 +1,5 @@
+# misc
+.env
+__pycache__
+.prototype
+./app/temp_audio

@@ -1,0 +1,149 @@
+/* 공통 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a2035; /* 배경색 */
+  color: #ffffff; /* 기본 글자색 */
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* 채팅 컨테이너 */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #2d2f42;
+  color: white;
+}
+
+.chat-body {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+
+/* 채팅방 리스트 */
+.chat-list-container {
+  flex: 0 0 320px; /* 좌측 패널 고정 너비 */
+  background-color: #48319D; /* 좌측 패널 배경색 */
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+}
+
+.chat-list-header {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #48319D; /* 헤더 배경색 */
+  border-bottom: 2px solid #5a47a2;
+  flex-shrink: 0; /* 고정 크기 */
+}
+
+.chat-list {
+  flex: 1; /* 남은 공간을 차지 */
+  overflow-y: auto; /* 스크롤 활성화 */
+}
+
+/* 스크롤바 디자인 */
+.chat-list::-webkit-scrollbar {
+  width: 8px; /* 스크롤바 너비 */
+}
+
+.chat-list::-webkit-scrollbar-track {
+  background: #3a3f54; /* 스크롤바 트랙(배경) 색상 */
+  border-radius: 4px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+  background: #7126E2; /* 스크롤바 손잡이 색상 */
+  border-radius: 4px; /* 스크롤바 모서리 둥글게 */
+}
+
+.chat-list::-webkit-scrollbar-thumb:hover {
+  background: #8322FF; /* 호버 시 색상 */
+}
+
+/* 스크롤바 기본 스타일 제거 (다른 브라우저) */
+.chat-list {
+  scrollbar-width: thin; /* Firefox에서 얇은 스크롤바 */
+  scrollbar-color: #7126E2 #3a3f54; /* Firefox 스크롤바 색상 */
+}
+
+.chat-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-item:hover {
+  background-color: #7126E2;
+}
+
+/* 쓰레기통 아이콘 스타일 */
+.delete-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.chat-item:hover .delete-icon {
+  opacity: 1; /* 마우스를 올리면 아이콘이 나타남 */
+}
+
+.chat-item.selected {
+  background-color: #8322FF; /* 선택된 페이지의 진한 보라색 */
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.chat-item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.character-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 채팅방 UI */
+.chat-room-container {
+  flex: 1;
+  background-color: #2d2f42;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 로고 */
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2f42;
+}
+
+.main-logo {
+  max-width: 300px;
+  height: auto;
+  opacity: 0.8;
+}

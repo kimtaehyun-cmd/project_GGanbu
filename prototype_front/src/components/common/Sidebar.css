@@ -1,0 +1,229 @@
+.side-container {
+  position: fixed; /* 위치 고정 */
+  width: 200px;
+  background-color: var(--side);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
+}
+
+.side-wrapper {
+  height: 100%;
+  padding: 20px;
+  /* 내부 여백 */
+  display: flex;
+  flex-direction: column;
+  /* 세로 방향으로 정렬 */
+  justify-content: space-between;
+}
+
+/* =================로고 이미지=========== */
+.side-logo {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #ffffff;
+
+  text-align: center;
+}
+.side-logo:hover {
+  cursor: pointer; /* 손가락 모양으로 변경 */
+}
+.side-logo img {
+  width: 150px;
+}
+
+/* ================캐릭터 생성================= */
+.button-create-char {
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background: var(--gradient);
+  /* 그라데이션 배경 */
+  border-radius: 36px;
+  transition: all 0.3s ease;
+}
+
+.button-create-char .retangle {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  font-size: var(--font-size-body-main);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 36px;
+  background-color: var(--side);
+}
+.button-create-char .create {
+  width: 25px;
+}
+
+/* ------hover 상태------ */
+.button-create-char:hover {
+  background: var(--gradient-hover);
+  box-shadow: 10px 5px 15px rgba(167, 62, 231, 0.3),
+    0px 0px 25px rgba(0, 235, 255, 0.3);
+  /* 추가 음영 효과 */
+}
+
+/* ==============탭 메뉴================== */
+.side-tap {
+  display: flex;
+  flex-direction: column;
+  /* 세로 방향으로 정렬 */
+}
+
+.side-find,
+.side-chat,
+.side-Gganbu {
+  color: var(--white-60);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  /* 내부 여백 */
+  cursor: pointer;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.sidetap-icon {
+  fill: var(--white-60);
+  transition: all 0.3s ease;
+}
+
+/* ----Hover 상태----- */
+.side-find:hover,
+.side-chat:hover,
+.side-Gganbu:hover {
+  background-color: var(--white-20);
+  color: var(--white);
+
+}
+
+.side-find:hover .sidetap-icon,.side-chat:hover .sidetap-icon, .side-Gganbu:hover  .sidetap-icon {
+  fill: var(--white);
+}
+
+/* ------활성화된 상태------ */
+
+.side-tap .active {
+  background-color: var(--white-20);
+  color: var(--white);
+}
+
+.side-find.active .sidetap-icon, .side-chat.active .sidetap-icon,.side-Gganbu.active .sidetap-icon {
+  fill: var(--white);
+}
+
+/* ==========회원 프로필 및 로그아웃============ */
+.side-myInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 10px;
+}
+
+.side-logout {
+  color: var(--white-30);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid var(--white-20);
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.side-logout .logout {
+  fill: var(--white-30);
+  transition: all 0.3s ease;
+}
+
+/* -----Hover 상태----- */
+.side-logout:hover {
+  background-color: var(--white-20);
+  color: var(--white-60);
+}
+.side-logout:hover .logout {
+  fill: var(--white-60);
+  /* 아이콘 색상 변경 */
+}
+
+.side-login {
+  color: var(--white-30);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid var(--white-20);
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.side-login .login {
+  fill: var(--white-30);
+  transition: all 0.3s ease;
+}
+
+/* -----Hover 상태----- */
+.side-login:hover {
+  background-color: var(--white-20);
+  color: var(--white-60);
+}
+.side-login:hover .login {
+  fill: var(--white-60);
+  /* 아이콘 색상 변경 */
+}
+
+/* =====================아이콘 크기==================== */
+.side-myInfo img {
+  width: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.side-myInfo img:hover {
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.side-Gganbu {
+  position: relative;
+}
+
+.gganbu-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3a3f58;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.gganbu-dropdown .dropdown-item:first-child {
+  border-bottom: 1px solid var(--white-20);  /* 구분선 추가 */
+}
+
+.gganbu-dropdown div {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.gganbu-dropdown div:hover {
+  background-color: #5f58d8;
+  color: white;
+}

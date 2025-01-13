@@ -1,0 +1,91 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #2d2f42;
+  color: white;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3a3f58;
+  padding: 15px 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-item.active {
+  color: #7a75f0;
+  border-bottom: 2px solid #7a75f0;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+}
+
+.chat-list-container {
+  width: 25%;
+  background-color: #383c52;
+}
+
+.chat-room-container {
+  flex: 1;
+  background-color: #2d2f42;
+}
+
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d2f42;
+}
+
+.main-logo {
+  max-width: 300px;
+  height: auto;
+  opacity: 0.8;
+}
+
+.chat-room-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2f42;
+}
+
+
+.app-main-frame {
+  display: flex;
+  height: 100vh; /* 전체 화면 높이 */
+}
+
+.app-main-sidebar {
+  position: fixed; /* 고정된 사이드바 */
+  top: 0;
+  left: 0;
+  width: 200px; /* Sidebar 너비 */
+  height: 100vh;
+  background-color: var(--side);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* 다른 요소 위로 표시 */
+}
+
+.app-main-content {
+  margin-left: 200px; /* Sidebar 너비만큼 밀어냄 */
+  flex: 1;
+  display: flex;
+  height: 100vh; /* 전체 화면 높이 */
+  flex-direction: column;
+  background-color: #2d2f42;
+  overflow-y: auto; /* 콘텐츠 스크롤 가능 */
+}

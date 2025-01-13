@@ -1,0 +1,163 @@
+.gganbu-container {
+  display: flex;
+  min-height: calc(100vh - 80px);
+  padding-top: 20px;
+}
+
+.gganbu-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin-left: 220px;
+}
+
+.gganbu-main {
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.gganbu-main h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.characters-row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-character-card-horizontal {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  height: 120px;
+  gap: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.create-character-card-horizontal:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.plus-box {
+  width: 90px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+}
+
+.create-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.create-title {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.create-subtitle {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.character-card-horizontal {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  height: 120px;
+  gap: 15px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.character-card-horizontal:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.character-image-horizontal {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.character-info-horizontal {
+  flex-grow: 1; /* 남은 공간을 차지 */
+}
+
+.character-info-horizontal h3 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+.character-info-horizontal p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.menu-container {
+  display: flex; /* 가로 정렬 */
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  right: 20px;
+}
+
+.menu-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 7px;
+}
+
+.dropdown-menu {
+  display: flex; /* 가로로 버튼 배치 */
+  flex-direction: row;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 5px;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+  top: 40px;
+  z-index: 10;
+}
+
+.dropdown-menu button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dropdown-menu button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
